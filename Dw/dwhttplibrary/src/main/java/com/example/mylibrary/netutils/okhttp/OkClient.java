@@ -229,20 +229,28 @@ public class OkClient implements NetHttpClient {
 
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    calls.remove(call);
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            callBack.onFailure("下载失败！");
-                        }
-                    });
+                    if(call.isCanceled())
+                    {
+                        calls.remove(call);
+                    }else {
+
+                            call.cancel();
+                        calls.remove(call);
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                callBack.onFailure("下载失败！");
+                            }
+                        });
+                    }
 
 
                 }
 
                 @Override
                 public void onResponse(Call call, final Response response) throws IOException {
-                        calls.remove(call);
+                    call.cancel();
+                    calls.remove(call);
 
                     InputStream in = null;
                     byte[] buf = new byte[mBufferSize];
@@ -311,19 +319,26 @@ public class OkClient implements NetHttpClient {
 
             @Override
             public void onFailure(Call call, IOException e) {
-                    calls.remove(call);
-                Util.log("onFailure" + e.toString());
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        callBack.onFailure("请求失败！");
+                    if(call.isCanceled()) {
+                        Util.log("onFailure" + e.toString());
+                        calls.remove(call);
+                    }else {
+                        call.cancel();
+                        calls.remove(call);
+                        Util.log("onFailure" + e.toString());
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                callBack.onFailure("请求失败！");
+                            }
+                        });
                     }
-                });
 
             }
 
             @Override
             public void onResponse(Call call, final Response response) throws IOException {
+                call.cancel();
                 calls.remove(call);
                 Util.log("onResponse");
                 try {
