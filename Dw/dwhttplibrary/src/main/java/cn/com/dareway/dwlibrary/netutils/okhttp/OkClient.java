@@ -1,12 +1,9 @@
-package com.example.mylibrary.netutils.okhttp;
+package cn.com.dareway.dwlibrary.netutils.okhttp;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 
-import com.example.mylibrary.netutils.GsonResolver;
-import com.example.mylibrary.netutils.Util;
-import com.example.mylibrary.netutils.factory.NetHttpClient;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,6 +14,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import cn.com.dareway.dwlibrary.netutils.GsonResolver;
+import cn.com.dareway.dwlibrary.netutils.Util;
+import cn.com.dareway.dwlibrary.netutils.factory.NetHttpClient;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;

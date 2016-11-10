@@ -1,4 +1,4 @@
-package com.example.mylibrary.datastoreutils;
+package cn.com.dareway.dwlibrary.datastoreutils;
 
 class Condition {
 	String columnName;

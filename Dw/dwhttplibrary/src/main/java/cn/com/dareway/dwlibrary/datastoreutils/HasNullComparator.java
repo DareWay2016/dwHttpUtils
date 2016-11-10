@@ -2,7 +2,7 @@
  * Created on 2006-5-26
  *
  */
-package com.example.mylibrary.datastoreutils;
+package cn.com.dareway.dwlibrary.datastoreutils;
 
 import java.math.BigDecimal;
 import java.util.Comparator;

@@ -18,14 +18,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.mylibrary.netutils;
+package cn.com.dareway.dwlibrary.netutils;
 
 
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.example.mylibrary.netutils.NetUtils;
-import com.example.mylibrary.netutils.okhttp.IOParam;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,6 +33,8 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import cn.com.dareway.dwlibrary.netutils.okhttp.IOParam;
 
 /**
  * This is okhttp util

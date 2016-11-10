@@ -1,4 +1,4 @@
-package com.example.mylibrary.viewhelper;
+package cn.com.dareway.dwlibrary.viewhelper;
 
 import android.content.Context;
 import android.content.res.TypedArray;

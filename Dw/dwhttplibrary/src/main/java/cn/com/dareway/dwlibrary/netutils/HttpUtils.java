@@ -1,10 +1,7 @@
-package com.example.mylibrary.netutils;
+package cn.com.dareway.dwlibrary.netutils;
 
 import android.util.Log;
 
-import com.example.mylibrary.dwutils.StorageUtil;
-import com.example.mylibrary.netutils.okhttp.HttpCallBack;
-import com.example.mylibrary.netutils.okhttp.OkClient;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,6 +10,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import cn.com.dareway.dwlibrary.dwutils.StorageUtil;
+import cn.com.dareway.dwlibrary.netutils.okhttp.HttpCallBack;
+import cn.com.dareway.dwlibrary.netutils.okhttp.OkClient;
 import okhttp3.Call;
 
 /**

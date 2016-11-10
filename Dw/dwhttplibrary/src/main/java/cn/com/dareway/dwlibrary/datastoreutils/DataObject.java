@@ -1,4 +1,4 @@
-package com.example.mylibrary.datastoreutils;
+package cn.com.dareway.dwlibrary.datastoreutils;
 
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;

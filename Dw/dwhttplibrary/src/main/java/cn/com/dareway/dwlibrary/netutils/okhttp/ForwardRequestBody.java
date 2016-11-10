@@ -18,10 +18,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.mylibrary.netutils.okhttp;
+package cn.com.dareway.dwlibrary.netutils.okhttp;
 
 
-import com.example.mylibrary.netutils.okhttp.ProgressListener;
 
 import java.io.IOException;
 

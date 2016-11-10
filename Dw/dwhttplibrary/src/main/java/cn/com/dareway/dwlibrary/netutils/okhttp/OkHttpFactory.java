@@ -1,7 +1,8 @@
-package com.example.mylibrary.netutils.okhttp;
+package cn.com.dareway.dwlibrary.netutils.okhttp;
 
-import com.example.mylibrary.netutils.factory.NetHttpClient;
-import com.example.mylibrary.netutils.factory.HttpFactory;
+
+import cn.com.dareway.dwlibrary.netutils.factory.HttpFactory;
+import cn.com.dareway.dwlibrary.netutils.factory.NetHttpClient;
 
 /**
  * Created by myn on 2016/10/17.
@@ -12,7 +13,7 @@ public class OkHttpFactory implements HttpFactory {
     private NetHttpClient client;
 
     @Override
-    public NetHttpClient  createHttpClient() {
+    public NetHttpClient createHttpClient() {
 
         return new OkClient();
     }

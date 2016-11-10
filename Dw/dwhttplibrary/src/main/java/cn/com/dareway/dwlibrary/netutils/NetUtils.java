@@ -1,10 +1,10 @@
-package com.example.mylibrary.netutils;
+package cn.com.dareway.dwlibrary.netutils;
 
 
-import com.example.mylibrary.netutils.factory.HttpFactory;
-import com.example.mylibrary.netutils.okhttp.OkClient;
-import com.example.mylibrary.netutils.okhttp.OkHttpFactory;
-import com.example.mylibrary.netutils.okhttp.OkHttpsClient;
+import cn.com.dareway.dwlibrary.netutils.factory.HttpFactory;
+import cn.com.dareway.dwlibrary.netutils.okhttp.OkClient;
+import cn.com.dareway.dwlibrary.netutils.okhttp.OkHttpFactory;
+import cn.com.dareway.dwlibrary.netutils.okhttp.OkHttpsClient;
 
 /**
  * Created by myn on 2016/10/14.

@@ -1,4 +1,4 @@
-package com.example.mylibrary.dwutils;
+package cn.com.dareway.dwlibrary.dwutils;
 
 import android.os.Environment;
 import android.text.TextUtils;

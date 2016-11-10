@@ -1,12 +1,12 @@
-package com.example.mylibrary.netutils.okhttp;
+package cn.com.dareway.dwlibrary.netutils.okhttp;
 
-import com.example.mylibrary.netutils.CertTool;
-import com.example.mylibrary.netutils.GsonResolver;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
 
+import cn.com.dareway.dwlibrary.netutils.CertTool;
+import cn.com.dareway.dwlibrary.netutils.GsonResolver;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
